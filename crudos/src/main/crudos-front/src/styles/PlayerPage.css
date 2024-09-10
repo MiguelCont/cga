@@ -6,7 +6,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
     gap: 20px;
     padding: 100px;
 }
@@ -23,7 +23,7 @@ body {
 }
 .player-image img {
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 .player-info {
     padding: 15px;
@@ -41,27 +41,30 @@ body {
 .player-info a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: darkgreen;
     color: white;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 .player-info a:hover {
-    background-color: #0056b3;
+    background-color: #333;
 }
 
 .full-width-image {
-    width: 70%;
+    width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
+    object-fit: contain;
     margin-right: auto;
 }
 
 .group-image-container{
     display: flex;
+    position: relative;
     align-items: center;
+    overflow: hidden;
     background-color: #333;
 }
 

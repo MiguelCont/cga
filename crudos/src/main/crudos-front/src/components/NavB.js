@@ -5,6 +5,9 @@ import '../styles/NavBar.css'
 function NavB() {
     return (
         <>
+        <div className='nav-login'>
+            <button className='nav_button'>login</button>
+        </div>
             <div className="nav">
                 <ul className="nav_ul">
                     <div className="nav_li"> 
